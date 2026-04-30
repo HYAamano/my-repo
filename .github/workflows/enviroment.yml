@@ -6,7 +6,9 @@ jobs:
     env:
       BRANCH: main
     steps:
-      - run: echo "${BRANCH}"
-      - uses: actions/checkout@v4
+      - name: Check variable
+        run: echo "The branch is ${{ env.BRANCH }}"
+      - name: CHeckout
+        uses: actions/checkout@v4
         with:
           ref: ${{ env.BRANCH }}
