@@ -9,7 +9,7 @@ jobs:
       - name: Check variable1
         run: echo "The branch is ${{ env.BRANCH }}"
       - name: Check variable2
-        run: echo "The Branch is "${BRANCH}"
+        run: echo "The Branch is ${BRANCH}"
       - name: CHeckout
         uses: actions/checkout@v5
         with:
